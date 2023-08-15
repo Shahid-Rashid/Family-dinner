@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.white {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(253, 27, 27);
+    grid-area: 2/2/4/7;
+}
+
+.black {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    grid-area: 3/6/5/11;
+}

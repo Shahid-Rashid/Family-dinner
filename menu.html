@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 62.5%;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            min-height: 10vh;
+            background-color: #66bfbf;
+            color: #000204;
+            font-size: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bricolage Grotesque', 'poppins', sans-serif;
+            width: 100%;
+        }
+
+        body {
+            background: #000204;
+        }
+
+        .outer {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 90vh;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .menu>p {
+            font-size: 3rem;
+            color: white;
+            font-family: 'caveat', 'poppins', sans-serif;
+            padding: 20px;
+            border-bottom: 1px solid white;
+        }
+
+        .menu>a>p {
+            font-size: 2rem;
+            color: white;
+            padding-top: 10px;
+        }
+
+        .menu>a>p:hover {
+            color: #66bfbf;
+        }
+
+        @media (max-width:750px) {
+            .menu>p {
+                font-size: 2rem;
+            }
+
+            .menu>a>p {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+    <title>Menu</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="heading">My Family Diner</h1>
+        </nav>
+    </header>
+    <div class="outer">
+        <div class="menu">
+            <p>Download our menu Below <i class="fa fa-solid fa-arrow-down"></i>
+            </p>
+            <a href="./event.jpg" download style="text-decoration: none;">
+                <p><i class="fa fa-solid fa-download"></i> Download</p>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

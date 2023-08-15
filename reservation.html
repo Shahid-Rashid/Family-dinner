@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 62.5%;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            min-height: 10vh;
+            background-color: #66bfbf;
+            color: #000204;
+            font-size: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bricolage Grotesque', 'poppins', sans-serif;
+            width: 100%;
+        }
+
+        body {
+            background: #000204;
+        }
+
+        .outer {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 90vh;
+        }
+
+        .reserve>form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .select {
+            background-color: #000204;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.6rem;
+            font-weight: lighter;
+            color: white;
+            height: 40px;
+            width: 200px;
+            padding: 10px;
+        }
+
+        .date {
+            background-color: #000204;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 2rem;
+            color: white;
+            height: 40px;
+            width: 200px;
+            padding: 10px;
+        }
+
+
+        .button {
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            font-size: 1.6rem;
+            background: none;
+            color: #66bfbf;
+            border-bottom: 1px solid #66bfbf;
+            margin-top: 5px;
+        }
+
+        .button:hover {
+            letter-spacing: 0.1rem;
+            color: #ff0063;
+            border-color: #ff0063;
+        }
+    </style>
+    <title>Reservation</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="heading">My Family Diner</h1>
+        </nav>
+    </header>
+    <div class="outer">
+        <div class="reserve">
+            <form action="">
+                <select name="" id="" class="select">
+                    <option selected hidden disabled>
+                        How many people?
+                    </option>
+                    <option value="">
+                        1 Person
+                    </option>
+                    <option value="">
+                        2 People
+                    </option>
+                    <option value="">
+                        3 People
+                    </option>
+                    <option value="">
+                        4 People
+                    </option>
+                    <option value="">
+                        5 People
+                    </option>
+                    <option value="">
+                        6 People
+                    </option>
+                    <option value="">
+                        7 People
+                    </option>
+                    <option value="">
+                        8 People
+                    </option>
+                    <option value="">
+                        9 People
+                    </option>
+                </select>
+                <input type="date" placeholder="How many?" required class="date">
+                <button type="submit" class="button">Book Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

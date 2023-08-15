@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 62.5%;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            min-height: 10vh;
+            background-color: #66bfbf;
+            color: #000204;
+            font-size: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bricolage Grotesque', 'poppins', sans-serif;
+        }
+
+        .outer {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .login {
+            background: #000204;
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+        }
+
+        .login>form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            /* width: auto; */
+        }
+
+        .login>p {
+            padding: 10px;
+            font-size: 3rem;
+            font-family: 'Bricolage Grotesque', 'poppins', sans-serif;
+            color: #66bfbf;
+        }
+
+        .sub {
+            /* padding: 10px; */
+            padding: 10px 15px 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 1.4rem;
+            /* border: none; */
+            background-color: #00020495;
+            color: aliceblue;
+            border: 0.5px solid;
+        }
+
+        .sub::before {
+            border: none;
+        }
+
+        .sub:focus {
+            border-color: #66bfbf;
+            outline: none;
+        }
+
+        .dub {
+            padding: 10px 15px 10px 15px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 10px;
+            font-size: 1.6rem;
+            color: #66bfbf;
+            background: none;
+            border-bottom: 1px solid #66bfbf;
+        }
+
+        .dub:focus {
+            letter-spacing: 0.1rem;
+            color: #ff0063;
+        }
+
+
+
+        @media (max-width: 750px) {
+            .login>p {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <title>Contact-us</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="heading">My Family Diner</h1>
+        </nav>
+    </header>
+    <div class="login">
+        <p>
+            Contact us here
+        </p>
+        <form action="">
+            <input class="sub" type="text" placeholder="Name" required>
+            <input class="sub" type="email" placeholder="Email" required>
+            <button class="dub" type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+
+</html>
