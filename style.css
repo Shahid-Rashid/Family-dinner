@@ -8,7 +8,7 @@
 
 header {
     background-color: #66bfbf;
-    min-height: 20vh;
+    min-height: 17vh;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -29,6 +29,10 @@ header {
     width: 100%;
     background-color: #ff0063;
     text-align: center;
+    min-height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
